@@ -17,10 +17,6 @@ Console.WriteLine("------------------------\n");
 Console.WriteLine("Type a number, and then press Enter");
 num1 = Convert.ToInt32(Console.ReadLine());
 
-// Ask the user to type the second number.
-Console.WriteLine("Type another number, and then press Enter");
-num2 = Convert.ToInt32(Console.ReadLine());
-
 // Ask the user to choose an option.
 Console.WriteLine("Choose an option from the following list:");
 Console.WriteLine("Press 1 for Addition");
