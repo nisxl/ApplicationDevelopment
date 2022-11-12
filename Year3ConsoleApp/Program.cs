@@ -53,7 +53,7 @@ if (a == "1" || a == "2" || a == "3" || a == "4" || a == "9" || a == "15" || a =
 }
 else if (a == "18")
 {
-    Console.WriteLine("Type a number, and then press Enter");
+    Console.WriteLine("Input a string and then press Enter");
     num3 = Console.ReadLine();
 }
 // Use a switch statement to do the math.
@@ -112,7 +112,7 @@ switch (a)
         Swap.SwapNumbers(num1, num2);
         break;
     case "18":
-        SearchString.SearchInArray(num1);
+        SearchString.SearchInArray(num3);
         break;
     default:
         Interpolation.StringInterpolation();
