@@ -3,9 +3,11 @@ using Year3ConsoleApp.Basics;
 using Year3ConsoleApp.Testing;
 using Year3ConsoleApp.Week2;
 using Year3ConsoleApp.Week3;
+using Year3ConsoleApp.Week4;
 
 
 //getting input from users
+
 
 
 // Display title as the C# console calculator app.
@@ -35,13 +37,15 @@ Console.WriteLine("Press 15 for prime composite Statement Example");
 Console.WriteLine("Press 16 for prime composite Statement Example");
 Console.WriteLine("Press 17 to swap numbers");
 Console.WriteLine("Press 18 to search in an array");
+Console.WriteLine("Press 19 to binary search a number in an array");
+Console.WriteLine("Press 20 to get an inheritence class utilization example");
 
 Console.Write("Your option? ");
 
 
 var a = Console.ReadLine();
 
-if (a == "1" || a == "2" || a == "3" || a == "4" || a == "9" || a == "15" || a == "16" || a == "17" )
+if (a == "1" || a == "2" || a == "3" || a == "4" || a == "9" || a == "15" || a == "16" || a == "17" || a == "19" )
 {
     // Ask the user to type the first number.
     Console.WriteLine("Type a number, and then press Enter");
@@ -113,6 +117,17 @@ switch (a)
         break;
     case "18":
         SearchString.SearchInArray(num3);
+        break;
+    case "19":
+        BinarySearch.BinarySearching(num1);
+        break;
+    case "20":
+        Class2 ob1 = new();     
+        ob1.class1();
+        break;
+    case "21":
+        CallingClass ob2 = new();
+        ob2.protExample();
         break;
     default:
         Interpolation.StringInterpolation();
