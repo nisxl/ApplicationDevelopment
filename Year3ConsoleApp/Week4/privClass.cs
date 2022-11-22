@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Year3ConsoleApp.Week4
 {
-    internal class privClass
+    internal class PrivClass
     {
         private string name1 = "nischal";
         public void privExample()

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Year3ConsoleApp.Week4
 {
-    internal class protClass
+    internal class ProtClass
     {
         protected string name1 = "nischal";
         public void protExample() {

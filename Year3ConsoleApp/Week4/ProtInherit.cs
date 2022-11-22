@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Year3ConsoleApp.Week4
 {
-    class CallingClass: protClass
+    class ProtInherit: ProtClass
     {
-        public CallingClass() { 
-            protClass ob1 = new protClass();
+        public ProtInherit() { 
+            ProtClass ob1 = new ProtClass();
             Console.WriteLine(ob1.protExample);
 
         }   

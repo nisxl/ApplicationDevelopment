@@ -126,7 +126,7 @@ switch (a)
         ob1.class1();
         break;
     case "21":
-        CallingClass ob2 = new();
+        ProtClass ob2 = new();
         ob2.protExample();
         break;
     default:
