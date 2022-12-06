@@ -28,15 +28,24 @@ namespace Year3ConsoleApp1.Week5
             };
 
             List<EmpModel> searchList = list.Where(x => x.IsMarried == val2).ToList();
-
+            Console.WriteLine("List of people having Married " + val2);
+            foreach (var item in searchList)
+            {
+                
+                Console.WriteLine(item.Name + " from " + item.Address + ",");
+            }
             Console.WriteLine(searchList.Select(x => x.Name).FirstOrDefault());
 
             List<EmpModel> searchList1 = list.Where(x => x.Address.Contains(val)).ToList();
+
+            Console.WriteLine("List of people living in " + val);
+
             foreach (var item in searchList1)
             {
                 Console.WriteLine(item.Name + " from " + item.Address + "," + item.IsDone);
             }
 
+            Console.WriteLine("=================================================");
             Console.WriteLine("This is Sorting");
             List<EmpModel> sortList = list.OrderBy(x => x.CreatedAt).ToList();
             List<EmpModel> sortList1 = list.OrderByDescending(x => x.Name).ToList();
